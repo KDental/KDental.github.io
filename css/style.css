@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
   overflow-x: hidden;
 }
@@ -14,7 +14,7 @@ body {
 /* Hero Section */
 .heroSection {
   padding: 1em 0;
-  background-image: url("../img/hero-bg.png");
+  background-image: url('../img/hero-bg.png');
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -209,7 +209,7 @@ body {
 /* Contact Section */
 .contactSection {
   padding: 8em 0 5em 0;
-  background-image: url("../img/contact-bg.png");
+  background-image: url('../img/contact-bg.png');
   background-size: cover;
   margin-top: -4em;
 }
@@ -537,8 +537,7 @@ body {
     opacity: 1;
   }
   .heroSection .carousel-control-next-icon {
-    filter: invert(0%) sepia(31%) saturate(1330%) hue-rotate(182deg)
-      brightness(88%) contrast(0%);
+    filter: invert(0%) sepia(31%) saturate(1330%) hue-rotate(182deg) brightness(88%) contrast(0%);
   }
   .heroSection .carousel-indicators li {
     height: 10px;
@@ -559,7 +558,7 @@ body {
     padding-bottom: 0;
   }
   .detailsSection {
-    background-image: url("../img/details-bg.png");
+    background-image: url('../img/details-bg.png');
     /* background-position: center; */
     background-size: 140% 100%;
     padding: 5em 2em;
@@ -583,7 +582,7 @@ body {
     top: -20px;
   }
   .heroSection .carousel-inner {
-    height: 200px;
+    height: 250px;
   }
   .heroSection .heroCarouselSlide .siderText {
     font-size: 1.1em;
