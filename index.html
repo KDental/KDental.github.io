@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Side Menu -->
+    <div id="sideMenuContents" class="sideMenu">
+      <i onclick="closedBtnFunction ()" id="closedBtn" class="fas fa-times"></i>
+      <a onclick="closedBtnFunction ()" class="sideMenuLink" href="#home"
+        >HOME</a
+      >
+      <a onclick="closedBtnFunction ()" class="sideMenuLink" href="#about"
+        >ABOUT US</a
+      >
+      <a
+        onclick="closedBtnFunction ()"
+        class="sideMenuLink"
+        href="products.html"
+        >PRODUCTS</a
+      >
+      <a onclick="closedBtnFunction ()" class="sideMenuLink" href="#contact"
+        >CONTACT US</a
+      >
+      <div class="languageLinks">
+        <a class="languageLink" href="#">
+          <img src="./img/USA-flag.png" alt="" />
+          EN
+        </a>
+        <a class="languageLink" href="#">
+          <img src="./img/FR-flag.png" alt="" />
+          FR
+        </a>
+        <a class="languageLink" href="#">
+          <img src="./img/PT-flag.png" alt="" />
+          PT
+        </a>
+      </div>
+      <div class="sideMenuSoicalLInks">
+        <a class="sideMenuSocialLink" href="#"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a class="sideMenuSocialLink" href="#"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a class="sideMenuSocialLink" href="#"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="heroSection">
+      <div class="container">
+        <nav class="navbar navbar-expand-md p-0">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <button
+            onclick="menuFunction()"
+            id="menuBtn"
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT US</a>
+              </li>
+              <li class="nav-item dropdown languageDropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="dropdownId"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><img src="./img/USA-flag.png" alt="" />EN
+                  <span class="activePoint"></span
+                ></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#"
+                    ><img src="./img/USA-flag.png" alt="" />EN</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><img src="./img/FR-flag.png" alt="" />FR</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><img src="./img/PT-flag.png" alt="" />PT</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Carousel -->
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="heroCarouselSlide odd">
+                <h1 class="slideNumber sliderHeading">01</h1>
+                <h1 class="sliderHeading mb-2">
+                  Your Personal Dental Boutique
+                </h1>
+                <p class="siderText">
+                  K-Dental, is present for its customers, professionals and
+                  students, supports them, and advises them during their
+                  purchases.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="heroCarouselSlide odd">
+                <h1 class="slideNumber sliderHeading">02</h1>
+                <h1 class="sliderHeading mb-2">Quality Certification</h1>
+                <p class="siderText">
+                  K-Dental, offers a wide choice of quality products, tested by
+                  professionals.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="heroCarouselSlide odd">
+                <h1 class="slideNumber sliderHeading">03</h1>
+                <h1 class="sliderHeading mb-2">Inexpensive</h1>
+                <p class="siderText">
+                  In order to provide quality equipment accessible to ALL,
+                  K-Dental offers you the best quality/price ratio
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="heroCarouselSlide odd hideContents">
+          <h1 class="slideNumber sliderHeading">01</h1>
+          <h1 class="sliderHeading mb-2">Your Personal Dental Boutique</h1>
+          <p class="siderText">
+            K-Dental, is present for its customers, professionals and students,
+            supports them, and advises them during their purchases.
+          </p>
+        </div>
+        <div class="heroCarouselSlides">
+          <div class="heroCarouselSlide">
+            <h1 class="slideNumber sliderHeading">02</h1>
+            <div>
+              <h1 class="sliderHeading">Quality Certification</h1>
+              <p class="siderText">
+                K-Dental, offers a wide choice of quality products, tested by
+                professionals.
+              </p>
+            </div>
+          </div>
+          <div class="heroCarouselSlide">
+            <h1 class="slideNumber sliderHeading">03</h1>
+            <div>
+              <h1 class="sliderHeading">Inexpensive</h1>
+              <p class="siderText">
+                In order to provide quality equipment accessible to ALL,
+                K-Dental offers you the best quality/price ratio
+              </p>
+            </div>
+          </div>
+          <img src="./img/carousel-img.png" alt="" />
+        </div>
+        <!-- Social Icons -->
+        <div class="socialLinks">
+          <a class="socialLink" href="#"
+            ><i class="fab fa-facebook"></i>Facebook</a
+          >
+          <a class="socialLink" href="#"
+            ><i class="fab fa-instagram"></i>INSTAGRAM</a
+          >
+          <a class="socialLink" href="#"
+            ><i class="fab fa-whatsapp"></i>WHATSAPP</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="aboutSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mt-0 mt-lg-5">
+            <img
+              data-toggle="modal"
+              data-target="#exampleModal"
+              class="aboutTeethImg"
+              src="./img/sm-teeth-icon.png"
+              alt=""
+            />
+            <h1 class="subHeading">Who Are We</h1>
+            <p class="mainText">
+              K-Dental is a young, dynimic and serious company offering medical
+              equipment dedicated to health professionals and students. Always
+              looking for new sources of inspiration, its idea is to offer them
+              to others at affordable prices.
+            </p>
+            <p class="mainText">
+              K-Dental will do its utmost to satisfy your orders of essential
+              products, and will endeavour to follow the evolution of the
+              profession by adapting its offer.
+            </p>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <img class="aboutImg" src="./img/about-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="detailsSection">
+      <div class="row">
+        <div class="col-lg-5">
+          <img class="detailsHideImg" src="./img/details-img.png" alt="" />
+        </div>
+        <div class="col-lg-7 oddCol">
+          <h1 class="subHeading">Sum Up</h1>
+          <div class="allDetails">
+            <div class="details">
+              <img class="teethIcon" src="./img/sm-teeth-icon.png" alt="" />
+              <span class="detailsText">Young, dynamic & serious company</span>
+            </div>
+            <div class="details">
+              <img class="teethIcon" src="./img/sm-teeth-icon.png" alt="" />
+              <span class="detailsText">Attractive price/quality ratio</span>
+            </div>
+            <div class="details">
+              <img class="teethIcon" src="./img/sm-teeth-icon.png" alt="" />
+              <span class="detailsText">Wide range of products</span>
+            </div>
+            <div class="details">
+              <img class="teethIcon" src="./img/sm-teeth-icon.png" alt="" />
+              <span class="detailsText"
+                >Student kit adapted to university courses</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contactSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="address">
+              <img src="./img/phone-icon.png" alt="" />
+              <div>
+                <div class="boldText">Office</div>
+                <a href="tel:+351 935 945 030" class="number"
+                  >+351 935 945 030</a
+                >
+              </div>
+            </div>
+            <div class="userEmail">
+              <h2 class="subHeading">Email</h2>
+              <a href="info@k-dental.fr" class="mainText">info@k-dental.fr</a>
+              <img class="userImg" src="./img/contact-img.png" alt="" />
+            </div>
+            <div class="row mt-5">
+              <div class="col-lg-9 mx-auto">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="boldText mb-3">Get to know us better</div>
+                    <a class="contactLink" href="#">Who We Are</a>
+                    <a class="contactLink" href="#">Contact Us</a>
+                  </div>
+                  <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="boldText mb-3">How We Operate</div>
+                    <a class="contactLink" href="#">Delivery</a>
+                    <a class="contactLink" href="#">Paiements</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copy Right -->
+    <div class="copyRight">© Copyright 2021 K-Dental All Right Reserved</div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="mainText showText">
+              All payments are made online through Lydia Payment of
+              <span>50%</span> in advance for pre-orders
+            </div>
+            <div class="mainText hideText">
+              Home delivery in proto
+              <span>(€7)</span> and Gandra <span>(€15)</span>, free at a relay
+              point next to the Universities
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
